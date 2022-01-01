@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>G4Exp - Career</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="job offer, job, game 4 exp, game for experience">
+  <meta name="Author" content="Jakub Miros">
+
+  <!--FAVICON-->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+  <!--CSS-->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!--JS-->
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/emailAlert.js"></script>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <!--FONTELLO-->
+  <link href="../assets/fontello/css/fontello.css" rel="stylesheet" type="text/css">
+</head>
+<body class="whiteBackground" onload="ReadPosition()">
+  <nav>
+    <a href="../index.html">
+      <img class="logo" src="../assets/img/logo/logo_full.png" alt="Games 4Experienced,g4exp.com,games,vr,company logo">
+    </a>
+    <div class="menu">
+      <a href="../index.html#about" class="underline">About Us</a>
+      <a href="../index.html#games" class="underline">Games</a>
+      <a href="../index.html#news" class="underline">News</a>
+      <a href="../index.html#contact" class="underline">Contact</a>
+      <a href="careers.html" class="underline">Careers</a>
+    </div>
+  </nav>
+  <section id="emailForProfessionals" class="contact">
+    <div class="contactContainer contactJob">
+      <h2 id="positionH2">Candidate Contact</h2>
+      <p>We are glad that you want to join our team.<br>Please complete the form below. We will contact you soon.</p>
+      <form method="post" action="../assets/php/sendjobemail.php" class="form" enctype="multipart/form-data">
+        <label for="FirstName">
+          <input type="text" id="FirstName" name="job_fname" placeholder="First Name" required>
+        </label>
+        <label for="LastName">
+          <input type="text" id="LastName" name="job_lname" placeholder="Last Name" required>
+        </label>
+        <label for="Email">
+          <input type="email" id="Email" name="job_email" placeholder="Email" required>
+        </label>
+        <label for="PhoneNumber">
+          <input type="tel" id="PhoneNumber" name="job_phone" placeholder="Phone, ex. +48123123123" required>
+        </label>
+        <label for="PortfolioLink">
+          <input type="url" id="PortfolioLink" name="job_portfolio" placeholder="Portfolio link, ex. https://www.abc.com" required>
+        </label>
+        <label for="Position">
+          <input type="text" id="Position" name="job_position" placeholder="Position" required>
+        </label>
+        <p class="label_p">Your CV file (*.docx or *.pdf)</p>
+        <label for="CV">
+          <input type="file" id="CV" name="job_cv" placeholder="Your CV - docx/pdf file">
+        </label>
+        <p class="statusMessage"></p>
+        <input type="submit" id="Submit" name="job_submit" value="Send">
+      </form>
+      <div style="clear:both"></div>
+    </div>
+  </section>
+  <footer class="whiteBackground">
+    <p><span id="year">2021</span>&copy Games 4Experience. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>

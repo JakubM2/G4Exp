@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Games 4 Experience</title>
+
+  <meta name="description" content="We are Games 4Experience - an independent VR game development company.">
+  <meta name="keywords" content="Games for Experience, g4exp,games, VR, studio, VR Games">
+  <meta name="Author" content="Jakub Miros">
+
+  <!--FAVICON-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!--JS-->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/email.js" defer></script>
+  <script src="assets/js/emailAlert.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <!--FONTELLO-->
+  <link href="assets/fontello/css/fontello.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="EmailAlert()">
+  <nav>
+    <a href="#">
+      <img class="logo" src="assets/img/logo/logo_full.png" alt="Games 4Experienced,g4exp.com,games,vr,company logo">
+    </a>
+    <div class="menu">
+      <a href="#about" class="underline">About Us</a>
+      <a href="#games" class="underline">Games</a>
+      <a href="#news" class="underline">News</a>
+      <a href="#contact" class="underline">Contact</a>
+      <a href="subpages/careers.html" class="underline">Careers</a>
+    </div>
+  </nav>
+  <section id="home" class="home">
+    <img src="assets/img/backgrounds/background_webp_2.webp" alt="keyart,vr game,4Experienced,game art">
+    <p>An Independent VR Game Development Studio</p>
+  </section>
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <div class="aboutContainer">
+      <div>
+        <p>We are Games 4Experience - an independent VR game development company. We supervise the production, publication and marketing of our releases. We’re always working on new and exciting projects. We chose Virtual Reality as it allows us to create immersive, real-life like experiences. Our goal is to deliver high quality products with innovative solutions and fill nearly every aspect in gaming genres.</p>
+      </div>
+      <img src="assets/img/other/monster_2_final_webp.webp" alt="game monster, game art, monster">
+    </div>
+    <div style="clear:both;"></div>
+  </section>
+  <section id="games" class="games">
+    <h2>Games</h2>
+    <div class="gamesContainer">
+      <div class="imgContainer">
+        <a href="games/game_1.html">
+          <div class="gameImg imgGame1"></div>
+        </a>
+      </div>
+      <div class="imgContainer">
+        <a href="games/game_2.html">
+          <div class="gameImg imgGame2"></div>
+          <span class="imgSpan">Coming soon</span>
+        </a>
+      </div>
+      <!--More Games Below...-->
+    </div>
+  </section>
+  <section id="news" class="news">
+    <h2>News</h2>
+    <div class="newsContainer">
+      <div class="newsPage">
+        <h3>More information coming soon</h3>
+        <span>13.08.2021</span>
+        <p>Stay tuned for more updates!</p>
+      </div>
+      <div class="newsPage">
+        <h3>Title of the recent news Title of the recent news Title of the recent news</h3>
+        <span>19.07.2021</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta aliquet lobortis. Nam eu ipsum sit amet tellus euismod fermentum. Mauris rhoncus luctus quam sit amet tempus. Nunc ac urna at odio feugiat fringilla quis et sapien. Aenean quis dui sodales, viverra mi accumsan, imperdiet justo. Etiam dolor nisi, rhoncus sed tempor non, laoreet a massa. Cras et ipsum pellentesque, ultrices mi quis, commodo nisi. Suspendisse pharetra dui sit amet elit vulputate, vitae sagittis erat fermentum. Integer gravida molestie libero sed imperdiet.</p>
+      </div>
+      <!--<div class="newsPage">
+        <h3>Title of the recent news Title of the recent news Title of the recent news</h3>
+        <span>19.07.2021</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta aliquet lobortis. Nam eu ipsum sit amet tellus euismod fermentum. Mauris rhoncus luctus quam sit amet tempus. Nunc ac urna at odio feugiat fringilla quis et sapien. Aenean quis dui sodales, viverra mi accumsan, imperdiet justo. Etiam dolor nisi, rhoncus sed tempor non, laoreet a massa. Cras et ipsum pellentesque, ultrices mi quis, commodo nisi. Suspendisse pharetra dui sit amet elit vulputate, vitae sagittis erat fermentum. Integer gravida molestie libero sed imperdiet. Praesent commodo interdum nulla a scelerisque. Nulla ac nunc sed justo volutpat volutpat. Vivamus tempus lacus dui, sed suscipit metus lacinia lacinia.</p>
+      </div>-->
+      <!--place to paste new div - below this comment-->
+    </div>
+    <!--
+      <p class="showMoreNews"><a href="subpages/news.html">Show more</a></p>
+    -->
+  </section>
+  <section id="contact" class="contact">
+    <div class="contactContainer">
+      <h2>Contact</h2>
+      <form method="post" action="assets/php/sendemail.php" class="form">
+        <label for="Name">
+          <input type="text" id="Name" name="user_name" placeholder="Name" required>
+        </label>
+        <label for="Email">
+          <input type="email" id="Email" name="user_email" placeholder="Email" required>
+        </label>
+        <label for="Subject">
+          <input type="text" id="Subject" name="user_subject" placeholder="Subject">
+        </label>
+        <label for="Message">
+          <textarea type="text" id="Message" name="user_message" placeholder="Message" required></textarea>
+        </label>
+        <p id="statusMessage"></p>
+        <input type="submit" id="Submit" name="user_submit" value="Send">
+      </form>
+      <div style="clear:both"></div>
+    </div>
+  </section>
+  <footer>
+    <p><span id="year">2021</span>&copy Games 4Experience. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>
